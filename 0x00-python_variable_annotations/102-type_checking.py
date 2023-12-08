@@ -4,7 +4,7 @@
 from typing import List
 
 
-def zoom_array(lst: List, factor: float = 2.0) -> List:
+def zoom_array(lst: List[int], factor: float = 2.0) -> List[int]:
     """ Return a tuple """
     zoomed_in: List = [
         item for item in lst
