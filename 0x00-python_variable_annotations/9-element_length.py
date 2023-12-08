@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 """ Basic annotations - to string """
-from typing import Tuple, List
+from typing import Iterable, List, Sequence, Tuple
 
 
-def element_length(lst: list) -> List[Tuple[str, int]]:
-    """ Return list of tuples, first element is the string, second element is the length of the string """
+def element_length(lst: Iterable[Sequence]) -> List[Tuple[Sequence, int]]:
+    """ Return list of tuples of sequence and length """
     return [(i, len(i)) for i in lst]
