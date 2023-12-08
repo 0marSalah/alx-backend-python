@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
 """ Complex types - mixed list """
 
-from typing import List
+from typing import List, Tuple
 
 
-def zoom_array(lst: List[int], factor: float = 2.0) -> List[int]:
+def zoom_array(lst: Tuple, factor: int = 2) -> List[int]:
     """ Return a tuple """
     zoomed_in: List = [
         item for item in lst
@@ -13,7 +13,7 @@ def zoom_array(lst: List[int], factor: float = 2.0) -> List[int]:
     return zoomed_in
 
 
-array = [12, 72, 91]
+array = (12, 72, 91)
 
 zoom_2x = zoom_array(array)
 
