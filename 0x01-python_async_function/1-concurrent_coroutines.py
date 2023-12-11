@@ -13,7 +13,6 @@ async def wait_n(n: int, max_delay: int) -> List[float]:
     while n > 0:
         dealy = await wait_random(max_delay)
         n -= 1
-        # Find the index to insert the delay while maintaining order
         idx = 0
         while idx < len(delays) and dealy > delays[idx]:
             idx += 1
